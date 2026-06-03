@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Output files (e.g., model visualizations, trained models)
+data.csv
+decision_tree.png
+
+# Kagglehub cache (if any)
+.kaggle/
+
+# Documentation files
+help-doc.txt
+
+# Dataset (if downloaded and not meant to be versioned)
+# If voice.csv is a large dataset that you download, uncomment the line below.
+# If it's a small, essential file that you want to keep in the repo, keep it commented.
+# voice.csv
