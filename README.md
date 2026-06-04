@@ -2,7 +2,7 @@
 
 This project implements a machine learning pipeline to identify gender (male or female) based on acoustic properties of voices and speech. It utilizes a **Decision Tree Classifier** to analyze frequency and spectral characteristics of audio signals.
 
-## 📋 Project Overview
+## Project Overview
 The core of this project is an end-to-end data science workflow, from data ingestion and preprocessing to model optimization and visualization. The system achieves high accuracy by identifying the most discriminative vocal features, such as the mean fundamental frequency.
 
 ### Key Features
@@ -12,7 +12,7 @@ The core of this project is an end-to-end data science workflow, from data inges
 * **Feature Analysis:** Extracts and visualizes feature importance to understand which acoustic properties drive the classification.
 * **Model Interpretability:** Generates visual and text-based decision rules for the trained model.
 
-## 📊 Dataset Information
+## Dataset Information
 The dataset used is the **Gender Recognition by Voice** dataset, which consists of 3,168 recorded voice samples, collected from male and female speakers. 
 
 **Acoustic Features include:**
@@ -25,7 +25,7 @@ The dataset used is the **Gender Recognition by Voice** dataset, which consists 
 * `meanfun`: average of fundamental frequency measured across acoustic signal
 * `label`: target variable (male or female)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 Ensure you have Python installed, along with the following libraries:
@@ -45,7 +45,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn kagglehub
     jupyter notebook Classification_with_Decision_Trees.ipynb
     ```
 
-## 📈 Results
+## Results
 * **Accuracy:** The model achieves a classification accuracy of **96.2%** on the test set.
 * **Optimized Accuracy:** After hyperparameter tuning (Grid Search), the model maintains strong performance with a cross-validation score of **97.2%**.
 * **Top Predictor:** `meanfun` (mean fundamental frequency) was identified as the most critical feature, accounting for over **90%** of the decision-making importance.
@@ -53,13 +53,13 @@ pip install numpy pandas matplotlib seaborn scikit-learn kagglehub
 ### Feature Importance Visualization
 The project generates a horizontal bar chart ranking the top 10 features, highlighting the dominance of frequency-based metrics in gender distinction.
 
-## 🛠️ Model Details
+## Model Details
 * **Algorithm:** Decision Tree Classifier
 * **Optimization:** 5-fold Cross-Validation
 * **Hyperparameters Tuned:** `max_depth`, `min_samples_split`, `min_samples_leaf`, and `criterion`.
 * **Evaluation Metrics:** Precision, Recall, F1-Score, and Accuracy.
 
-## 📄 License
+## License
 This project is for educational purposes. The dataset is sourced from Kaggle under its respective license.
 
 ***
