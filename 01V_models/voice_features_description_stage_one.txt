@@ -1,0 +1,25 @@
+
+Voice Feature Dataset Description
+
+Each row in this dataset represents one audio file with extracted acoustic features.
+
+Features:
+
+rms:
+Root Mean Square energy of the signal. Represents loudness.
+
+centroid:
+Spectral centroid. Indicates brightness of the voice.
+
+bandwidth:
+Spectral bandwidth. Measures spread of frequencies.
+
+label:
+Class label of the voice (e.g., male or female).
+
+file:
+Original audio file name.
+
+Notes:
+- Features are extracted from audio signals.
+- Used for machine learning classification tasks.

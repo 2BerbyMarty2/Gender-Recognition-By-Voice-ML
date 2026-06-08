@@ -1,12 +1,12 @@
 # Gender Recognition by Voice using Machine Learning
 
-This project implements a machine learning pipeline to identify gender (male or female) based on acoustic properties of voices and speech. It utilizes a **Decision Tree Classifier** to analyze frequency and spectral characteristics of audio signals.
+This project implements a machine learning pipeline to identify gender (male or female) based on acoustic properties of voices and speech. It utilizes simple ML methods to analyze frequency and spectral characteristics of audio signals.
 
 ## Project Overview
 The core of this project is an end-to-end data science workflow, from data ingestion and preprocessing to model optimization and visualization. The system achieves high accuracy by identifying the most discriminative vocal features, such as the mean fundamental frequency.
 
 ### Key Features
-* **Automated Dataset Ingestion:** Downloads the "Voice Gender" dataset directly from Kaggle using `kagglehub`.
+* **Using Kaggle 
 * **Predictive Modeling:** Implements a Scikit-Learn `DecisionTreeClassifier`.
 * **Hyperparameter Tuning:** Uses `GridSearchCV` to optimize tree depth and splitting criteria.
 * **Feature Analysis:** Extracts and visualizes feature importance to understand which acoustic properties drive the classification.
