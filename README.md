@@ -28,9 +28,11 @@ The dataset used is the **Gender Recognition by Voice** dataset, which consists 
 ## Getting Started
 
 ### Prerequisites
-Ensure you have Python installed, along with the following libraries:
+Ensure you have Python installed, then install dependencies from `requirements.txt`:
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn kagglehub
+python -m venv venv
+source venv/bin/activate  # on Windows: venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
 ### Usage
@@ -39,7 +41,16 @@ pip install numpy pandas matplotlib seaborn scikit-learn kagglehub
     git clone https://github.com/YourUsername/gender-recognition-by-voice-ml.git
     cd gender-recognition-by-voice-ml
     ```
-2.  **Run the analysis:**
+2.  **Get the data.** `data/voice.csv` is already tracked in git. The raw
+    `.wav` recordings under `data/data/` are *not* tracked (see
+    `.gitignore`) since they total ~1.6GB. If `data/data/` is missing or was
+    deleted to save space, re-download everything with:
+    ```bash
+    python download_data.py
+    ```
+    This requires a Kaggle API token at `~/.kaggle/kaggle.json` (see
+    [kagglehub authentication docs](https://github.com/Kaggle/kagglehub#authenticate)).
+3.  **Run the analysis:**
     Open the Jupyter Notebook to step through the training process:
     ```bash
     jupyter notebook Classification_with_Decision_Trees.ipynb
